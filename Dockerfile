@@ -7,6 +7,8 @@
 # Pull base image.
 FROM dockerfile/ubuntu
 
+RUN curl https://raw.githubusercontent.com/TaylorMonacelli/ubuntu_taylor/master/setup.sh | sh -
+
 # Install Redis.
 RUN \
   cd /tmp && \
